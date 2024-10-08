@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vivaxy.vscode-conventional-commits",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "trunk.io",
+    "samkirkland.plop-templates",
+    "asciidoctor.asciidoctor-vscode"
+  ]
+}

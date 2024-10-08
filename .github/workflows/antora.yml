@@ -1,0 +1,38 @@
+name: Antora
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - docs/**
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: ~
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  # trunk-ignore(actionlint/permissions)
+  pages: write
+  id-token: write
+
+jobs:
+  antora:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Yarn
+        uses: mskelton/setup-yarn@v3
+      - name: Build Docs
+        run: yarn docs-build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "${{ github.workspace }}/build/site"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

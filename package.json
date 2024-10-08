@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "antora": "^3.1.9",
+    "cz-conventional-changelog": "^3.3.0",
+    "http-server": "^14.1.1",
+    "plop": "^4.0.1"
+  },
+  "type": "module",
+  "version": "0.3.0",
+  "scripts": {
+    "docs-build": "antora --fetch antora-playbook.yaml",
+    "docs-serve": "http-server ./build/site",
+    "plop": "plop"
+  }
+}

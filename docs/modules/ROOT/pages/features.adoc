@@ -1,0 +1,9 @@
+= Features
+
+== Code quality checks with link:https://trunk.io/code-quality[trunk.io]
+== Development Container
+== Github Flow
+== Mandatory semantic commits
+== Release management with link:https://github.com/release-it/release-it[release-it]
+== Repository settings as code
+== Scaffolding with link:https://plopjs.com/[plopjs]

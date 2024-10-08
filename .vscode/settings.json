@@ -1,0 +1,4 @@
+{
+  "asciidoc.antora.enableAntoraSupport": true,
+  "conventionalCommits.scopes": ["user-guide"]
+}
