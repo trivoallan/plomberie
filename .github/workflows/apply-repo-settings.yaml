@@ -6,8 +6,8 @@ on:
       - main
     paths:
       - .github/settings.yml
-  schedule:
-    - cron: 0 0 * * * # daily
+  #schedule:
+  #  - cron: 0 0 * * * # daily
   workflow_dispatch: ~
 
 jobs:
